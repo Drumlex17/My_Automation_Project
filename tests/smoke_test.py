@@ -20,6 +20,7 @@ def smoke_test_f(get_driver):
     print("Good! You're on catalog page!")
 
     cfp = CatalogFilter(get_driver)
+    cfp.select_filter()
     cfp.card_product()
     card_product_url = "https://www.citilink.ru/product/igrovaya-konsol-playstation-5-kabel-pitaniya-evrovilka-cfi-1200a-825gb-1897350/"
     assert cfp.get_current_url() == card_product_url
