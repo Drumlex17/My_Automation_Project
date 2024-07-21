@@ -51,7 +51,6 @@ class Login_page(Base):
     # Методы - вызываем в тестах
 
     def authorization(self):
-        self.get_current_url()
         self.click_log_in()
         self.input_email("wefare9126@nolanzip.com")
         self.input_password("TestQATest")

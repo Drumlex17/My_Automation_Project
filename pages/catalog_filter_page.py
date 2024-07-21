@@ -15,7 +15,7 @@ class CatalogFilter(Base):
     price_filter_min = "(//input[@data-meta-name='FilterRangeGroup__input-min'])[2]"
     price_filter_max = "(//input[@data-meta-name='FilterRangeGroup__input-max'])[2]"
     brand = "//span[text()='PLAYSTATION']"
-    go_product_page = "(//a[@href='/product/igrovaya-konsol-playstation-5-kabel-pitaniya-evrovilka-cfi-1200a-825gb-1897350/'])[3]"
+    go_product_page = "(//a[@data-meta-name='Snippet__title'])[3]"
 
     # Поиск по локаторам с использованием явного ожидания и возврат результата поиска
 
@@ -57,7 +57,7 @@ class CatalogFilter(Base):
 
     def click_price_filter_max(self):
         self.get_price_filter_max().clear()
-        self.get_price_filter_max().send_keys('69000')
+        self.get_price_filter_max().send_keys('65790')
         self.get_price_filter_max().send_keys(Keys.ENTER)
         print("Apply Price Filter Max")
 
@@ -74,7 +74,6 @@ class CatalogFilter(Base):
     # Методы - вызываем в тестах
 
     def card_product(self):
-        self.get_current_url()
         self.click_product_locator()
 
     def select_filter(self):

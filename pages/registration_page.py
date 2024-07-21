@@ -33,6 +33,5 @@ class RegistrationPage(Base):
     # Методы - вызываем в тестах
 
     def go_to_registration(self):
-        self.get_current_url()
         self.show_code_product()
         self.click_button_registration()

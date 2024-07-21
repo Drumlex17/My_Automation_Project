@@ -94,7 +94,6 @@ class OrderPage(Base):
     # Методы - вызываем в тестах
 
     def end_registration(self):
-        self.get_current_url()
         self.click_customer_data()
         self.click_first_name()
         self.click_last_name()

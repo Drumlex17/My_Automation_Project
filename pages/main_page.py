@@ -44,7 +44,6 @@ class Main_page(Base):
     # Методы - вызываем в тестах
 
     def select_catalog(self):
-        self.get_current_url()
         self.click_link_catalog()
         self.click_gamer()
         self.click_link_playstation()

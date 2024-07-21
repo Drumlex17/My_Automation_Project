@@ -1,3 +1,4 @@
+import code
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
@@ -41,7 +42,6 @@ class CardProductPage(Base):
     # Методы - вызываем в тестах
 
     def go_to_cart(self):
-        self.get_current_url()
         self.show_code_product()
         self.click_button_cart()
         self.click_go_cart_page()
