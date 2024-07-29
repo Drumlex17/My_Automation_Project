@@ -10,7 +10,7 @@ class CardProductPage(Base):
     # Локаторы - перечисляем локаторы на странице сайта
 
     code_product = "//span[@class='e1n0yuko0 e1o6fkkp0 e106ikdt0 app-catalog-ahcgzg e1gjr6xo0']"
-    button_cart = "//button[@class='e11w80q30 e4uhfkv0 app-catalog-zkoen2 e4mggex0']"
+    button_cart = "//button[@data-meta-name='BasketDesktopButton']"
     go_cart_page = "(//span[@class='en3k2720 e106ikdt0 css-1y9ljh1 e1gjr6xo0'])[4]"
 
     # Поиск по локаторам с использованием явного ожидания и возврат результата поиска
