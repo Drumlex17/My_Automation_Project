@@ -1,6 +1,3 @@
-#### Модуль связан с модулями login_page и test_buy_product ###
-
-
 import datetime
 class Base():
     def __init__(self, driver): # Создали метод, который хранит наш драйвер
